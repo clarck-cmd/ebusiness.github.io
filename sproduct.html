@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>E-BUSINESS</title>
+        
+
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:400,500,600,300" rel="stylesheet" type="text/css">
+
+        <!-- css-->
+        <link rel="stylesheet" href="css\bootstrap.min.css">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\style-cat.css">
+    </head>
+
+    <!--debut du site -->
+    <body>
+        <section id="header" >
+
+            
+            <a href="#"><img src="img\logo2.jpg" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                
+                    <li><a id="Accueil" href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a id="about" href="index.html#about">A propos</a></li>  
+                    <li><a id="contact" href="#contact">Contact</a></li>  
+                        
+                </ul>
+            </div>
+        </section>
+
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/image1.jpg" width="100%" id="MainImg" alt="">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/image2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/image3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/image1.jpg" width="100%" class="small-img" alt="">
+                    </div><div class="small-img-col">
+                        <img src="img/image1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="single-pro-details">
+                <h6>Chaussure</h6>
+                <h4>Chaussure pour homme</h4>
+                <h2>25.000fcfa</h2>
+                <input type="number" value="1">
+                <button id="btn" class="normal">Add to Cart</button>
+                <h4 >product details</h4>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, laborum saepe at reprehenderit voluptas amet facilis officia quidem sapiente, vel praesentium nam est 
+                    illum accusamus excepturi. Delectus eius excepturi eum?
+                </span>
+            </div>
+            
+
+        </section>
+
+        
+        <footer class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <h2 id="Contact">Contactez nous !</h2>
+                    <hr class="separator">
+                    <div class="span6">
+                        <form class="formulaireContact">
+                            <div class="controls controls-row">
+                                <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+                                <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+                            </div>
+                            <div class="controls">
+                                <textarea id="message" name="message" class="span6" placeholder="Your Message" rows="5"></textarea>
+                            </div>
+                              
+                            <div class="controls">
+                                
+                                <button class="btn btn-custom" id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Send</button>
+                                <hr class="separator">
+                                
+                                <p>
+                                    
+                                    Copyright &copy; 2022 Logisc-Software Copyright Holder All Rights Reserved
+                                </p>
+                            </div>
+
+                            
+                        </form>
+                    </div>
+            
+
+            </div>
+            
+        </footer>
+
+        <script>
+            var MainImg = document.getElementById("img/image1.jpg")
+            var smallimg = document.getElementsByClassName("small-img")
+
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            }
+        </script>
+
+
+
+
+        <script src="script.js"></script>
+
+
+    </body>
+</html>
